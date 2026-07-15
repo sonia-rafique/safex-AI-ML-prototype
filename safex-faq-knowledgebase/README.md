@@ -71,11 +71,11 @@ The system is divided into three distinct execution phases, each operating seque
 
 
 
-## **3. Detailed Component Breakdown**
+#### **3. Detailed Component Breakdown**
 
 ---
 
-### **A. Web Scraper (`src/scraper.py`)**
+#### **A. Web Scraper (`src/scraper.py`)**
 
 The scraper operates as a deep web crawler starting from the homepage.
 
@@ -85,7 +85,7 @@ The scraper operates as a deep web crawler starting from the homepage.
 
 ---
 
-### **B. Knowledge Base Processor (`src/data_processor.py`)**
+#### **B. Knowledge Base Processor (`src/data_processor.py`)**
 
 The data processor normalizes the raw scraped data and prepares it for query matching.
 
@@ -95,7 +95,7 @@ The data processor normalizes the raw scraped data and prepares it for query mat
 
 ---
 
-### **C. FastAPI Conversational Service (`src/app.py`)**
+#### **C. FastAPI Conversational Service (`src/app.py`)**
 
 The web service serves as the core communication layer.
 
@@ -106,7 +106,7 @@ The web service serves as the core communication layer.
 
 ---
 
-## **4. Source Code and File Structure**
+#### **4. Source Code and File Structure**
 
 ```text
 safex-AI-ML-prototype/
