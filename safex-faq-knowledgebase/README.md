@@ -13,13 +13,10 @@
 ## 1. Project Overview and Executive Summary
 
 The FAQ Knowledge Base serves as the primary informational core of the SafeX Solutions WhatsApp Auto-Reply Bot. The purpose of this module is to establish an automated data pipeline that bridges unstructured corporate web assets with a structured, query-responsive automated conversational endpoint.
-
 By utilizing dynamic multi-page web crawling, generative semantic extraction, and statistical keyword ranking, this application transforms raw, unstructured web layout content into highly reliable, verified conversational FAQ schemas. The system operates on a dual-source dataset architecture: a set of curated backbone enterprise records combined with live, web-scraped content mined via Google Gemini. To protect the integrity of corporate communications, the system enforces strict token-boundary matching rules and score thresholds to filter out-of-domain requests and serve graceful, contextual fallback responses.
 
 ---
-
 ## 2. System Architecture and Design
-
 The system is divided into three distinct execution phases, each operating sequentially to fetch, process, and serve conversational data.
 
 ### Architectural Workflow
