@@ -1,6 +1,3 @@
-To ensure your headings render perfectly and maintain a highly professional aesthetic, I have structured the `README.md` below. I have added extra line breaks before every header, which fixes the common Markdown rendering issue where headers accidentally merge with text. I have also used bolding on all headers to meet your specific requirement.
-
-You can copy and paste the content below directly into your `README.md` file.
 
 ---
 
