@@ -70,71 +70,58 @@ The system is divided into three distinct execution phases, each operating seque
 +-----------------------------------------------------------------------------+
 
 
-
-#### **3. Detailed Component Breakdown**
-
----
-
-#### **A. Web Scraper (`src/scraper.py`)**
-
+3. Detailed Component Breakdown
+A. Web Scraper (src/scraper.py)
 The scraper operates as a deep web crawler starting from the homepage.
 
-* **State Management:** Uses a First-In-First-Out (FIFO) queue for Breadth-First Search (BFS) link traversal up to 40 pages to ensure complete data coverage.
-* **HTTP Adapters:** Uses a custom HTTP session configured with `urllib3.util.retry.Retry` to gracefully handle network fluctuations, rate limits (429), and transient server errors (5xx).
-* **Data Cleansing:** Decomposes non-content HTML structures such as `<script>`, `<style>`, and `<noscript>` blocks using BeautifulSoup's `.decompose()` method. It avoids compressing payloads during transmission to prevent character decoding anomalies.
+State Management: Uses a First-In-First-Out (FIFO) queue for Breadth-First Search (BFS) link traversal up to 40 pages to ensure complete data coverage.
 
----
+HTTP Adapters: Uses a custom HTTP session configured with urllib3.util.retry.Retry to gracefully handle network fluctuations, rate limits (429), and transient server errors (5xx).
 
-#### **B. Knowledge Base Processor (`src/data_processor.py`)**
+Data Cleansing: Decomposes non-content HTML structures such as <script>, <style>, and <noscript> blocks using BeautifulSoup's .decompose() method.
 
+B. Knowledge Base Processor (src/data_processor.py)
 The data processor normalizes the raw scraped data and prepares it for query matching.
 
-* **Dual-Data Architecture:** Loads 13 highly authoritative, hand-verified base records ensuring high-reliability service, pricing, and contact replies remain untouched.
-* **Generative Knowledge Mining:** Interfaces with the `google-genai` SDK using the `gemini-1.5-flash` model under strict formatting instructions. The model is forced to output schema-conforming JSON objects directly.
-* **Pandas Pipeline:** Maps all entities into Pandas DataFrames, enforces sequential index generation, strips leading/trailing spaces, normalizes string casings, and cleans duplicate rows.
+Dual-Data Architecture: Loads 13 highly authoritative, hand-verified base records ensuring high-reliability service, pricing, and contact replies remain untouched.
 
----
+Generative Knowledge Mining: Interfaces with the google-genai SDK using the gemini-1.5-flash model under strict formatting instructions.
 
-#### **C. FastAPI Conversational Service (`src/app.py`)**
+Pandas Pipeline: Maps all entities into Pandas DataFrames, enforces sequential index generation, strips leading/trailing spaces, normalizes string casings, and cleans duplicate rows.
 
+C. FastAPI Conversational Service (src/app.py)
 The web service serves as the core communication layer.
 
-* **Lifespan Manager:** Loads the compiled JSON records into memory at server startup using FastAPI's lifespan handlers to enable fast, in-memory query processing.
-* **Text Ranking Engine:** Filters out conversational noise and standard stop words. It ranks results by matching exact word boundaries across questions, answers, and keywords, assigning weighted scores to noun stems.
-* **Confidence Threshold Gate:** Disallows queries that do not score at or above a minimum score of 20, keeping off-topic or irrelevant inquiries from returning false-positive matches.
-* **TwiML XML Interface:** Safely escapes special characters (such as `&`, `<`, and `>`) and packages the response in a standardized XML format compatible with Twilio's webhook specifications.
+Lifespan Manager: Loads the compiled JSON records into memory at server startup using FastAPI's lifespan handlers to enable fast, in-memory query processing.
 
----
+Text Ranking Engine: Filters out conversational noise and standard stop words. It ranks results by matching exact word boundaries across questions, answers, and keywords.
 
-#### **4. Source Code and File Structure**
+Confidence Threshold Gate: Disallows queries that do not score at or above a minimum score of 20, keeping off-topic inquiries from returning false-positive matches.
 
-```text
+TwiML XML Interface: Safely escapes special characters and packages the response in a standardized XML format compatible with Twilio's webhook specifications.
+
+4. Source Code and File Structure
+Plaintext
 safex-AI-ML-prototype/
 ├── task-1-safex-chatbot/
 └── task-2-faq-knowledgebase/
     ├── data/
-    │   ├── raw_scraped_text.txt         # Raw output from multi-page web scraper
-    │   └── safex_faqs.json              # Compiled database containing 58+ clean FAQs
+    │   ├── raw_scraped_text.txt
+    │   └── safex_faqs.json
     ├── src/
     │   ├── __init__.py
-    │   ├── app.py                       # FastAPI application serving TwiML endpoint
-    │   ├── data_processor.py            # Pandas data validation and Gemini pipeline
-    │   └── scraper.py                   # Multi-page web crawler
-    ├── .gitignore                       # Ensures .venv, .env, and __pycache__ are untracked
-    ├── README.md                        # Project technical documentation
-    └── requirements.txt                 # Package dependencies
-
----
-
-## 5. Setup and Execution Instructions
-
-### Installation
-
+    │   ├── app.py
+    │   ├── data_processor.py
+    │   └── scraper.py
+    ├── .gitignore
+    ├── README.md
+    └── requirements.txt
+5. Setup and Execution Instructions
+Installation
 Activate a clean virtual environment and run the following command to install the required packages:
 
-```bash
+Bash
 pip install -r requirements.txt
-
 ```
 
 ### Environment Variable Configuration
