@@ -71,9 +71,11 @@ The system is divided into three distinct execution phases, each operating seque
 
 
 
-## 3. Detailed Component Breakdown
+## **3. Detailed Component Breakdown**
 
-### A. Web Scraper (`src/scraper.py`)
+---
+
+### **A. Web Scraper (`src/scraper.py`)**
 
 The scraper operates as a deep web crawler starting from the homepage.
 
@@ -81,7 +83,9 @@ The scraper operates as a deep web crawler starting from the homepage.
 * **HTTP Adapters:** Uses a custom HTTP session configured with `urllib3.util.retry.Retry` to gracefully handle network fluctuations, rate limits (429), and transient server errors (5xx).
 * **Data Cleansing:** Decomposes non-content HTML structures such as `<script>`, `<style>`, and `<noscript>` blocks using BeautifulSoup's `.decompose()` method. It avoids compressing payloads during transmission to prevent character decoding anomalies.
 
-### B. Knowledge Base Processor (`src/data_processor.py`)
+---
+
+### **B. Knowledge Base Processor (`src/data_processor.py`)**
 
 The data processor normalizes the raw scraped data and prepares it for query matching.
 
@@ -89,7 +93,9 @@ The data processor normalizes the raw scraped data and prepares it for query mat
 * **Generative Knowledge Mining:** Interfaces with the `google-genai` SDK using the `gemini-1.5-flash` model under strict formatting instructions. The model is forced to output schema-conforming JSON objects directly.
 * **Pandas Pipeline:** Maps all entities into Pandas DataFrames, enforces sequential index generation, strips leading/trailing spaces, normalizes string casings, and cleans duplicate rows.
 
-### C. FastAPI Conversational Service (`src/app.py`)
+---
+
+### **C. FastAPI Conversational Service (`src/app.py`)**
 
 The web service serves as the core communication layer.
 
@@ -100,7 +106,7 @@ The web service serves as the core communication layer.
 
 ---
 
-## 4. Source Code and File Structure
+## **4. Source Code and File Structure**
 
 ```text
 safex-AI-ML-prototype/
@@ -117,8 +123,6 @@ safex-AI-ML-prototype/
     ├── .gitignore                       # Ensures .venv, .env, and __pycache__ are untracked
     ├── README.md                        # Project technical documentation
     └── requirements.txt                 # Package dependencies
-
-```
 
 ---
 
