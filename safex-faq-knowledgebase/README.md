@@ -1,22 +1,51 @@
 
-```markdown
-# Technical Project Documentation: FAQ Knowledge Base Module
+---
 
-**Module Name:** FAQ Knowledge Base API  
-**Developer Name:** Sonia Rafique  
-**Academic Program:** BS Computer Science  
-**Target Enterprise:** SafeX Solutions  
-**Group ID:** Group 24  
+```markdown
+<h1 align="center"><b>FAQ KNOWLEDGE BASE MODULE</b></h1>
+<p align="center">
+  <b>SafeX Solutions WhatsApp Auto-Reply Bot Core Component</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python Version">
+  <img src="https://img.shields.io/badge/FastAPI-0.110%2B-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/Pandas-2.2%2B-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/Google_Gemini-1.5_Flash-4285F4?style=flat-square&logo=google&logoColor=white" alt="Gemini">
+  <img src="https://img.shields.io/badge/Twilio_TwiML-Compatible-F22F46?style=flat-square&logo=twilio&logoColor=white" alt="Twilio">
+</p>
+
+---
+
+### Module Metadata
+* **Module Name:** FAQ Knowledge Base API  
+* **Developer Name:** Sonia Rafique 
+* **Academic Program:** BS Computer Science  
+* **Target Enterprise:** SafeX Solutions  
+* **Group ID:** Group 24  
+
+---
+
+## Table of Contents
+1. [Project Overview and Executive Summary](#1-project-overview-and-executive-summary)
+2. [System Architecture and Design](#2-system-architecture-and-design)
+3. [Detailed Component Breakdown](#3-detailed-component-breakdown)
+4. [Source Code and File Structure](#4-source-code-and-file-structure)
+5. [Setup and Execution Instructions](#5-setup-and-execution-instructions)
+6. [API Validation and Payload Schemas](#6-api-validation-and-payload-schemas)
 
 ---
 
 ## 1. Project Overview and Executive Summary
 
 The FAQ Knowledge Base serves as the primary informational core of the SafeX Solutions WhatsApp Auto-Reply Bot. The purpose of this module is to establish an automated data pipeline that bridges unstructured corporate web assets with a structured, query-responsive automated conversational endpoint.
+
 By utilizing dynamic multi-page web crawling, generative semantic extraction, and statistical keyword ranking, this application transforms raw, unstructured web layout content into highly reliable, verified conversational FAQ schemas. The system operates on a dual-source dataset architecture: a set of curated backbone enterprise records combined with live, web-scraped content mined via Google Gemini. To protect the integrity of corporate communications, the system enforces strict token-boundary matching rules and score thresholds to filter out-of-domain requests and serve graceful, contextual fallback responses.
 
 ---
+
 ## 2. System Architecture and Design
+
 The system is divided into three distinct execution phases, each operating sequentially to fetch, process, and serve conversational data.
 
 ### Architectural Workflow
