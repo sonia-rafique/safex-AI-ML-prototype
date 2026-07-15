@@ -1,16 +1,6 @@
-```markdown
-<h1 align="center"><b>FAQ KNOWLEDGE BASE MODULE</b></h1>
-<p align="center">
-  <b>SafeX Solutions WhatsApp Auto-Reply Bot Core Component</b>
-</p>
+# FAQ KNOWLEDGE BASE MODULE
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python Version">
-  <img src="https://img.shields.io/badge/FastAPI-0.110%2B-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Pandas-2.2%2B-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas">
-  <img src="https://img.shields.io/badge/Google_Gemini-1.5_Flash-4285F4?style=flat-square&logo=google&logoColor=white" alt="Gemini">
-  <img src="https://img.shields.io/badge/Twilio_TwiML-Compatible-F22F46?style=flat-square&logo=twilio&logoColor=white" alt="Twilio">
-</p>
+### SafeX Solutions WhatsApp Auto-Reply Bot Core Component
 
 ---
 
@@ -78,43 +68,38 @@ The system is divided into three distinct execution phases, each operating seque
 | - Filters weak semantic inputs below the Confidence Score Threshold of 20    |
 | - Responds with valid, escaped TwiML XML to the Twilio Webhook interface   |
 +-----------------------------------------------------------------------------+
-
-```
-
----
-
-## 3. Detailed Component Breakdown
-
-### A. Web Scraper (`src/scraper.py`)
-
+3. Detailed Component Breakdown
+A. Web Scraper (src/scraper.py)
 The scraper operates as a deep web crawler starting from the homepage.
 
-* **State Management:** Uses a First-In-First-Out (FIFO) queue for Breadth-First Search (BFS) link traversal up to 40 pages to ensure complete data coverage.
-* **HTTP Adapters:** Uses a custom HTTP session configured with `urllib3.util.retry.Retry` to gracefully handle network fluctuations, rate limits (429), and transient server errors (5xx).
-* **Data Cleansing:** Decomposes non-content HTML structures such as `<script>`, `<style>`, and `<noscript>` blocks using BeautifulSoup's `.decompose()` method. It avoids compressing payloads during transmission to prevent character decoding anomalies.
+State Management: Uses a First-In-First-Out (FIFO) queue for Breadth-First Search (BFS) link traversal up to 40 pages to ensure complete data coverage.
 
-### B. Knowledge Base Processor (`src/data_processor.py`)
+HTTP Adapters: Uses a custom HTTP session configured with urllib3.util.retry.Retry to gracefully handle network fluctuations, rate limits (429), and transient server errors (5xx).
 
+Data Cleansing: Decomposes non-content HTML structures such as <script>, <style>, and <noscript> blocks using BeautifulSoup's .decompose() method. It avoids compressing payloads during transmission to prevent character decoding anomalies.
+
+B. Knowledge Base Processor (src/data_processor.py)
 The data processor normalizes the raw scraped data and prepares it for query matching.
 
-* **Dual-Data Architecture:** Loads 13 highly authoritative, hand-verified base records ensuring high-reliability service, pricing, and contact replies remain untouched.
-* **Generative Knowledge Mining:** Interfaces with the `google-genai` SDK using the `gemini-1.5-flash` model under strict formatting instructions. The model is forced to output schema-conforming JSON objects directly.
-* **Pandas Pipeline:** Maps all entities into Pandas DataFrames, enforces sequential index generation, strips leading/trailing spaces, normalizes string casings, and cleans duplicate rows.
+Dual-Data Architecture: Loads 13 highly authoritative, hand-verified base records ensuring high-reliability service, pricing, and contact replies remain untouched.
 
-### C. FastAPI Conversational Service (`src/app.py`)
+Generative Knowledge Mining: Interfaces with the google-genai SDK using the gemini-1.5-flash model under strict formatting instructions. The model is forced to output schema-conforming JSON objects directly.
 
+Pandas Pipeline: Maps all entities into Pandas DataFrames, enforces sequential index generation, strips leading/trailing spaces, normalizes string casings, and cleans duplicate rows.
+
+C. FastAPI Conversational Service (src/app.py)
 The web service serves as the core communication layer.
 
-* **Lifespan Manager:** Loads the compiled JSON records into memory at server startup using FastAPI's lifespan handlers to enable fast, in-memory query processing.
-* **Text Ranking Engine:** Filters out conversational noise and standard stop words. It ranks results by matching exact word boundaries across questions, answers, and keywords, assigning weighted scores to noun stems.
-* **Confidence Threshold Gate:** Disallows queries that do not score at or above a minimum score of 20, keeping off-topic or irrelevant inquiries from returning false-positive matches.
-* **TwiML XML Interface:** Safely escapes special characters (such as `&`, `<`, and `>`) and packages the response in a standardized XML format compatible with Twilio's webhook specifications.
+Lifespan Manager: Loads the compiled JSON records into memory at server startup using FastAPI's lifespan handlers to enable fast, in-memory query processing.
 
----
+Text Ranking Engine: Filters out conversational noise and standard stop words. It ranks results by matching exact word boundaries across questions, answers, and keywords, assigning weighted scores to noun stems.
 
-## 4. Source Code and File Structure
+Confidence Threshold Gate: Disallows queries that do not score at or above a minimum score of 20, keeping off-topic or irrelevant inquiries from returning false-positive matches.
 
-```text
+TwiML XML Interface: Safely escapes special characters (such as &, <, and >) and packages the response in a standardized XML format compatible with Twilio's webhook specifications.
+
+4. Source Code and File Structure
+Plaintext
 safex-AI-ML-prototype/
 ├── task-1-safex-chatbot/
 └── task-2-faq-knowledgebase/
@@ -129,52 +114,28 @@ safex-AI-ML-prototype/
     ├── .gitignore                       # Ensures .venv, .env, and __pycache__ are untracked
     ├── README.md                        # Project technical documentation
     └── requirements.txt                 # Package dependencies
-
-```
-
----
-
-## 5. Setup and Execution Instructions
-
-### Installation
-
+5. Setup and Execution Instructions
+Installation
 Activate a clean virtual environment and run the following command to install the required packages:
 
-```bash
+Bash
 pip install -r requirements.txt
-
-```
-
-### Environment Variable Configuration
-
+Environment Variable Configuration
 Configure your Gemini API key inside your terminal instance to enable free-tier content generation:
 
-#### Windows PowerShell
-
-```powershell
+Windows PowerShell
+PowerShell
 $env:GEMINI_API_KEY="your_actual_api_key_here"
-
-```
-
-#### Windows Command Prompt (cmd)
-
-```cmd
+Windows Command Prompt (cmd)
+DOS
 set GEMINI_API_KEY=your_actual_api_key_here
-
-```
-
-#### macOS / Linux Terminal
-
-```bash
+macOS / Linux Terminal
+Bash
 export GEMINI_API_KEY="your_actual_api_key_here"
-
-```
-
-### Pipeline Execution Commands
-
+Pipeline Execution Commands
 Run the pipeline stages in order from your project root directory:
 
-```bash
+Bash
 # Step 1: Execute deep crawling
 python -m src.scraper
 
@@ -183,59 +144,35 @@ python -m src.data_processor
 
 # Step 3: Start the web service
 python -m src.app
-
-```
-
----
-
-## 6. API Validation and Payload Schemas
-
+6. API Validation and Payload Schemas
 Once your local server starts, you can verify performance using the following testing protocols:
 
-* **Interactive Swagger Documentation:** Open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) in your browser.
-* **Search API Verification:** Test keyword matches directly at [http://127.0.0.1:8000/faqs/search?query=seo](http://127.0.0.1:8000/faqs/search?query=seo).
+Interactive Swagger Documentation: Open http://127.0.0.1:8000/docs in your browser.
 
-### Webhook POST Request Specifications
+Search API Verification: Test keyword matches directly at http://127.0.0.1:8000/faqs/search?query=seo.
 
-* **Endpoint Path:** `/webhook/whatsapp`
-* **Content-Type:** `application/x-www-form-urlencoded`
+Webhook POST Request Specifications
+Endpoint Path: /webhook/whatsapp
 
-#### A. Valid Match Sample Input (Form URL-Encoded)
+Content-Type: application/x-www-form-urlencoded
 
-```text
+A. Valid Match Sample Input (Form URL-Encoded)
+Plaintext
 Body=can you tell me how do you guys handle my application development for iOS or mobile phones?
 From=+923001234567
-
-```
-
-#### Valid Match Sample Output (TwiML XML)
-
-```xml
+Valid Match Sample Output (TwiML XML)
+XML
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
   <Message>Yes, SafeX Solutions builds custom mobile applications as part of its digital services portfolio, alongside web and desktop solutions.</Message>
 </Response>
-
-```
-
-#### B. Out-Of-Domain Fallback Sample Input (Form URL-Encoded)
-
-```text
+B. Out-Of-Domain Fallback Sample Input (Form URL-Encoded)
+Plaintext
 Body=Can you fix my broken office laptop screen?
 From=+923001234567
-
-```
-
-#### Out-Of-Domain Fallback Sample Output (TwiML XML)
-
-```xml
+Out-Of-Domain Fallback Sample Output (TwiML XML)
+XML
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
   <Message>Thanks for reaching out to SafeX Solutions! I couldn't find an exact answer to that in our FAQ - let me connect you with a team member who can help. In the meantime, feel free to ask about our services, pricing, or how to get started.</Message>
 </Response>
-
-```
-
-```
-
-```
