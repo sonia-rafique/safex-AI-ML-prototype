@@ -1,0 +1,18 @@
+# Web scraping
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.2.2
+
+# Data manipulation
+pandas==2.2.2
+
+# REST API
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+python-multipart==0.0.9   # needed to parse Twilio's form-encoded webhook payloads
+
+# Used by FastAPI for request/response models & validation
+pydantic==2.7.4
+
+# Optional: powers the LLM-based auto-extraction hook in data_processor.py
+google-genai==0.1.1

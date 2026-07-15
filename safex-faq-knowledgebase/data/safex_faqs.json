@@ -1,0 +1,701 @@
+{
+  "meta": {
+    "source": "SafeX Solutions (https://safexsolutions.com)",
+    "generated_by": "src/data_processor.py",
+    "total_faqs": 58,
+    "categories": [
+      "Company",
+      "Contact",
+      "Pricing",
+      "Process",
+      "Services",
+      "Social Impact"
+    ]
+  },
+  "faqs": [
+    {
+      "id": "svc-001",
+      "category": "Services",
+      "question": "What services does SafeX Solutions offer?",
+      "answer": "SafeX Solutions offers a full suite of digital services, including Cybersecurity (data security, network protection, vulnerability assessments, and threat monitoring), Web Development (responsive, SEO-friendly websites and e-commerce platforms), Mobile App Development, Creative UI/UX Design and Branding, SEO, Digital Marketing, and IT Consulting.",
+      "keywords": [
+        "capabilities",
+        "offer",
+        "services",
+        "what do you do"
+      ]
+    },
+    {
+      "id": "svc-002",
+      "category": "Services",
+      "question": "Does SafeX Solutions provide cybersecurity services?",
+      "answer": "Yes. Cybersecurity is one of SafeX Solutions' core specialties, covering data security, network protection, vulnerability assessments, and continuous threat monitoring for businesses of all sizes.",
+      "keywords": [
+        "cybersecurity",
+        "protection",
+        "security",
+        "threat",
+        "vulnerability"
+      ]
+    },
+    {
+      "id": "svc-003",
+      "category": "Services",
+      "question": "Can SafeX Solutions build a website or web application for my business?",
+      "answer": "Yes. The Web Development team builds responsive, SEO-friendly websites, custom web applications, and secure e-commerce platforms tailored to your business requirements.",
+      "keywords": [
+        "ecommerce",
+        "web app",
+        "web development",
+        "website"
+      ]
+    },
+    {
+      "id": "svc-004",
+      "category": "Services",
+      "question": "Does SafeX Solutions do mobile app development?",
+      "answer": "Yes, SafeX Solutions builds custom mobile applications as part of its digital services portfolio, alongside web and desktop solutions.",
+      "keywords": [
+        "android",
+        "app development",
+        "ios",
+        "mobile app"
+      ]
+    },
+    {
+      "id": "svc-005",
+      "category": "Services",
+      "question": "What creative or design services are available?",
+      "answer": "SafeX Solutions offers Creative UI/UX Design, branding, graphic design, and logo creation to help businesses build a strong and memorable digital identity.",
+      "keywords": [
+        "branding",
+        "design",
+        "graphic design",
+        "logo",
+        "ui/ux"
+      ]
+    },
+    {
+      "id": "svc-006",
+      "category": "Services",
+      "question": "Does SafeX Solutions offer SEO and marketing services?",
+      "answer": "Yes. SafeX Solutions provides SEO and data-driven digital marketing services designed to increase a brand's visibility, engagement, and conversions.",
+      "keywords": [
+        "marketing",
+        "search engine optimization",
+        "seo",
+        "visibility"
+      ]
+    },
+    {
+      "id": "price-001",
+      "category": "Pricing",
+      "question": "What is the minimum project budget for working with SafeX Solutions?",
+      "answer": "Most engagements with SafeX Solutions start at a minimum project budget of $1,000+, depending on scope and complexity.",
+      "keywords": [
+        "how much",
+        "minimum budget",
+        "price",
+        "project cost"
+      ]
+    },
+    {
+      "id": "price-002",
+      "category": "Pricing",
+      "question": "What are SafeX Solutions' hourly rates?",
+      "answer": "SafeX Solutions' hourly rates typically range from $25 to $49 per hour, depending on the service and the expertise required.",
+      "keywords": [
+        "cost per hour",
+        "hourly rate",
+        "pricing",
+        "rate"
+      ]
+    },
+    {
+      "id": "company-001",
+      "category": "Company",
+      "question": "Where is SafeX Solutions based?",
+      "answer": "SafeX Solutions is headquartered in Islamabad, Pakistan, and serves clients internationally across more than a dozen countries.",
+      "keywords": [
+        "based",
+        "headquarters",
+        "islamabad",
+        "location",
+        "pakistan"
+      ]
+    },
+    {
+      "id": "company-002",
+      "category": "Company",
+      "question": "How many clients has SafeX Solutions worked with?",
+      "answer": "SafeX Solutions has served 80+ international clients, delivering cybersecurity, development, design, and marketing projects across a wide range of industries.",
+      "keywords": [
+        "clients",
+        "customers",
+        "experience",
+        "portfolio"
+      ]
+    },
+    {
+      "id": "company-003",
+      "category": "Company",
+      "question": "What kind of company is SafeX Solutions?",
+      "answer": "SafeX Solutions is a global digital services and cybersecurity company focused on helping businesses innovate, grow, and stay protected through secure, technology-driven solutions.",
+      "keywords": [
+        "about",
+        "company",
+        "overview",
+        "who are you"
+      ]
+    },
+    {
+      "id": "contact-001",
+      "category": "Contact",
+      "question": "How do I get started with a project?",
+      "answer": "You can get started by reaching out through the SafeX Solutions website (safexsolutions.com) or this WhatsApp chat to share your project needs, budget, and timeline. A team member will follow up to scope the work with you.",
+      "keywords": [
+        "get started",
+        "how to begin",
+        "onboarding",
+        "start a project"
+      ]
+    },
+    {
+      "id": "contact-002",
+      "category": "Contact",
+      "question": "How can I contact SafeX Solutions?",
+      "answer": "You can contact SafeX Solutions via this WhatsApp chat, through the contact form on safexsolutions.com, or by sending a direct message describing your project needs.",
+      "keywords": [
+        "contact",
+        "email",
+        "phone",
+        "reach",
+        "whatsapp"
+      ]
+    },
+    {
+      "id": "gemini-001",
+      "category": "Company",
+      "question": "What is SafeX Solutions?",
+      "answer": "SafeX Solutions is a global, full-service technology and digital solutions company that delivers IT services, cybersecurity, digital marketing, and creative media solutions to businesses.",
+      "keywords": [
+        "digital solutions",
+        "it services",
+        "safex solutions",
+        "technology company"
+      ]
+    },
+    {
+      "id": "gemini-002",
+      "category": "Company",
+      "question": "How many countries does SafeX Solutions operate in?",
+      "answer": "SafeX Solutions serves businesses and clients across more than 15 countries worldwide.",
+      "keywords": [
+        "countries",
+        "global operations",
+        "international clients"
+      ]
+    },
+    {
+      "id": "gemini-003",
+      "category": "Company",
+      "question": "What is the official slogan of SafeX Solutions?",
+      "answer": "The official slogan of the company is: 'SafeX Solutions, Securing Technology. Powering Growth. Creating Impact.'",
+      "keywords": [
+        "creating impact",
+        "motto",
+        "powering growth",
+        "securing technology",
+        "slogan"
+      ]
+    },
+    {
+      "id": "gemini-004",
+      "category": "Company",
+      "question": "Who runs and leads the SafeX Solutions business network?",
+      "answer": "SafeX Solutions is a growing global business network led by skilled, educated, and driven young professionals.",
+      "keywords": [
+        "business network",
+        "leadership",
+        "young professionals",
+        "youth-led"
+      ]
+    },
+    {
+      "id": "gemini-005",
+      "category": "Company",
+      "question": "How many years of professional experience does SafeX Solutions have?",
+      "answer": "SafeX Solutions brings 15 years of industry experience to its technology and digital services.",
+      "keywords": [
+        "experience",
+        "track record",
+        "years of experience"
+      ]
+    },
+    {
+      "id": "gemini-006",
+      "category": "Company",
+      "question": "How many happy clients has SafeX Solutions served globally?",
+      "answer": "SafeX Solutions has earned the trust of over 150 happy clients across its international markets.",
+      "keywords": [
+        "customer count",
+        "global trust",
+        "happy clients"
+      ]
+    },
+    {
+      "id": "gemini-007",
+      "category": "Company",
+      "question": "What business sizes and types does SafeX Solutions work with?",
+      "answer": "SafeX Solutions collaborates closely with startups, small businesses, and large enterprises to deliver custom and scalable solutions.",
+      "keywords": [
+        "business sizes",
+        "enterprises",
+        "small businesses",
+        "startups"
+      ]
+    },
+    {
+      "id": "gemini-008",
+      "category": "Services",
+      "question": "What types of web development and application design does SafeX Solutions perform?",
+      "answer": "SafeX Solutions designs and builds corporate websites, eCommerce platforms, and custom digital platforms tailored to unique client goals.",
+      "keywords": [
+        "application design",
+        "corporate websites",
+        "custom platforms",
+        "ecommerce",
+        "web development"
+      ]
+    },
+    {
+      "id": "gemini-009",
+      "category": "Services",
+      "question": "What is SafeX Solutions' approach to UI/UX Design?",
+      "answer": "The company creates intuitive user interfaces that engage users smoothly across all platforms and devices.",
+      "keywords": [
+        "interfaces",
+        "smooth navigation",
+        "ui/ux design",
+        "user experience"
+      ]
+    },
+    {
+      "id": "gemini-010",
+      "category": "Services",
+      "question": "Does SafeX Solutions build custom eCommerce websites?",
+      "answer": "Yes, eCommerce website development is fully integrated into their Web Development and Application Design capabilities.",
+      "keywords": [
+        "custom ecommerce",
+        "ecommerce",
+        "online stores"
+      ]
+    },
+    {
+      "id": "gemini-011",
+      "category": "Services",
+      "question": "What web performance factors does SafeX Solutions focus on during development?",
+      "answer": "The company prioritizes creating responsive, fast-loading websites that reflect each client's brand identity perfectly.",
+      "keywords": [
+        "fast-loading websites",
+        "responsive design",
+        "web performance"
+      ]
+    },
+    {
+      "id": "gemini-012",
+      "category": "Services",
+      "question": "What network infrastructure and IT management services are offered?",
+      "answer": "SafeX Solutions designs, builds, and manages secure, scalable, and high-performance network infrastructures to keep enterprise systems connected and protected.",
+      "keywords": [
+        "enterprise systems",
+        "it management",
+        "network infrastructure"
+      ]
+    },
+    {
+      "id": "gemini-013",
+      "category": "Services",
+      "question": "What does SafeX Solutions offer under its Cloud Solutions and System Integration services?",
+      "answer": "They build scalable cloud infrastructures that ensure business data is secure, accessible around the clock, and easily integrated with other platforms.",
+      "keywords": [
+        "cloud infrastructure",
+        "cloud solutions",
+        "data security",
+        "system integration"
+      ]
+    },
+    {
+      "id": "gemini-014",
+      "category": "Services",
+      "question": "Does SafeX Solutions offer smart mobile application development?",
+      "answer": "Yes, SafeX Solutions offers mobile application services called 'Smart Apps' to craft seamless mobile experiences with precision.",
+      "keywords": [
+        "app experiences",
+        "mobile development",
+        "smart apps"
+      ]
+    },
+    {
+      "id": "gemini-015",
+      "category": "Services",
+      "question": "What are the Data Insights services provided by SafeX Solutions?",
+      "answer": "Data Insights services involve turning complex data sets into clear, actionable reports that empower smarter decision-making for business growth.",
+      "keywords": [
+        "actionable reports",
+        "business growth",
+        "data insights",
+        "decision-making"
+      ]
+    },
+    {
+      "id": "gemini-016",
+      "category": "Services",
+      "question": "What is included in SafeX Solutions' Cybersecurity and Data Protection Services?",
+      "answer": "SafeX Solutions provides robust security solutions designed to protect enterprise networks, secure business data, and maintain digital resilience.",
+      "keywords": [
+        "cybersecurity",
+        "data protection",
+        "digital resilience",
+        "network security"
+      ]
+    },
+    {
+      "id": "gemini-017",
+      "category": "Services",
+      "question": "Does SafeX Solutions offer IT Consulting and Digital Transformation?",
+      "answer": "Yes, they provide expert IT consulting to help businesses transform digitally, align their technology environments, and optimize operations.",
+      "keywords": [
+        "business optimization",
+        "digital transformation",
+        "it consulting"
+      ]
+    },
+    {
+      "id": "gemini-018",
+      "category": "Services",
+      "question": "Does SafeX Solutions offer AI Automation services?",
+      "answer": "Yes, SafeX Solutions offers AI Automation services, though this specific page is currently under active technical development for enhanced experience.",
+      "keywords": [
+        "ai automation",
+        "artificial intelligence",
+        "automation systems"
+      ]
+    },
+    {
+      "id": "gemini-019",
+      "category": "Services",
+      "question": "What search engine optimization services does SafeX Solutions provide?",
+      "answer": "They offer professional Search Engine Optimization (SEO) and performance marketing strategies designed to increase visibility and traffic.",
+      "keywords": [
+        "performance marketing",
+        "search engine optimization",
+        "seo",
+        "traffic"
+      ]
+    },
+    {
+      "id": "gemini-020",
+      "category": "Services",
+      "question": "What social media services does SafeX Solutions provide?",
+      "answer": "SafeX Solutions provides complete Social Media Management and custom content strategies to increase target audience engagement.",
+      "keywords": [
+        "audience engagement",
+        "content strategy",
+        "social media management"
+      ]
+    },
+    {
+      "id": "gemini-021",
+      "category": "Services",
+      "question": "Does SafeX Solutions provide branding and identity design services?",
+      "answer": "Yes, they specialize in branding, corporate identity design, and overall creative direction to elevate brand visibility across all media platforms.",
+      "keywords": [
+        "brand visibility",
+        "branding",
+        "creative direction",
+        "identity design"
+      ]
+    },
+    {
+      "id": "gemini-022",
+      "category": "Services",
+      "question": "What lead generation and marketing automation tools do they support?",
+      "answer": "They build and deploy tailored lead generation strategies and marketing automation systems to scale business acquisition and marketing funnels.",
+      "keywords": [
+        "acquisition funnels",
+        "lead generation",
+        "marketing automation"
+      ]
+    },
+    {
+      "id": "gemini-023",
+      "category": "Services",
+      "question": "What analytics services are offered within the marketing division?",
+      "answer": "SafeX Solutions provides marketing analytics and growth optimization services to ensure decisions are data-driven and maximize conversion rates.",
+      "keywords": [
+        "analytics",
+        "conversion rates",
+        "data-driven marketing",
+        "growth optimization"
+      ]
+    },
+    {
+      "id": "gemini-024",
+      "category": "Services",
+      "question": "What commercial photography services are offered by SafeX Solutions?",
+      "answer": "They offer high-quality photography, commercial shoots, event coverage, and product visual assets.",
+      "keywords": [
+        "commercial shoots",
+        "event coverage",
+        "photography",
+        "product photography"
+      ]
+    },
+    {
+      "id": "gemini-025",
+      "category": "Services",
+      "question": "What video production services does SafeX Solutions provide?",
+      "answer": "They provide professional videography, corporate films, event highlight reels, and promotional video content.",
+      "keywords": [
+        "corporate films",
+        "promotional video",
+        "video production",
+        "videography"
+      ]
+    },
+    {
+      "id": "gemini-026",
+      "category": "Services",
+      "question": "Does SafeX Solutions offer post-production and creative video editing?",
+      "answer": "Yes, their creative media services include comprehensive post-production and creative video editing to deliver high-impact visual stories.",
+      "keywords": [
+        "creative editing",
+        "post-production",
+        "video editing",
+        "visual storytelling"
+      ]
+    },
+    {
+      "id": "gemini-027",
+      "category": "Services",
+      "question": "What is visual campaign development at SafeX Solutions?",
+      "answer": "It is an integrated creative service that builds cohesive visual assets, photography, and film aligned with broader marketing objectives.",
+      "keywords": [
+        "campaign development",
+        "creative media",
+        "visual campaign"
+      ]
+    },
+    {
+      "id": "gemini-028",
+      "category": "Services",
+      "question": "What workforce and talent training programs does SafeX Solutions run?",
+      "answer": "SafeX Solutions runs Technical Skills Training & Certification Programs, Digital Marketing workshops, and Creative workshops.",
+      "keywords": [
+        "certifications",
+        "digital marketing workshops",
+        "technical training",
+        "workforce development"
+      ]
+    },
+    {
+      "id": "gemini-029",
+      "category": "Services",
+      "question": "Does SafeX Solutions offer internships and career mentorship?",
+      "answer": "Yes, they provide internships, professional mentorship, and career pathway development for future-ready young talents.",
+      "keywords": [
+        "career pathways",
+        "internships",
+        "mentorship",
+        "professional development"
+      ]
+    },
+    {
+      "id": "gemini-030",
+      "category": "Services",
+      "question": "Are leadership development programs available through SafeX Solutions?",
+      "answer": "Yes, they provide tailored leadership and professional development programs to empower youth and young business professionals.",
+      "keywords": [
+        "leadership development",
+        "professional development",
+        "youth leadership"
+      ]
+    },
+    {
+      "id": "gemini-031",
+      "category": "Pricing",
+      "question": "How are subscription plans set up at SafeX Solutions?",
+      "answer": "SafeX Solutions offers scalable, structured subscription plans designed to fit different business sizes and technology needs.",
+      "keywords": [
+        "business tiers",
+        "flexible pricing",
+        "subscription plans"
+      ]
+    },
+    {
+      "id": "gemini-032",
+      "category": "Social Impact",
+      "question": "What is the mission of SafeX Solutions?",
+      "answer": "Their mission is to empower skilled, educated, and driven young professionals to lead, innovate, and create measurable impact through technology.",
+      "keywords": [
+        "empowerment",
+        "innovation",
+        "mission",
+        "young professionals"
+      ]
+    },
+    {
+      "id": "gemini-033",
+      "category": "Social Impact",
+      "question": "What percentage of profits does SafeX Solutions reinvest into its Trust?",
+      "answer": "SafeX Solutions reinvests 50% of its business profits back into its independent, youth-governed Trust.",
+      "keywords": [
+        "business profits",
+        "philanthropy",
+        "reinvestment",
+        "social impact"
+      ]
+    },
+    {
+      "id": "gemini-034",
+      "category": "Social Impact",
+      "question": "Who governs the independent Trust of SafeX Solutions?",
+      "answer": "The independent Trust is fully governed by students and young leaders.",
+      "keywords": [
+        "students",
+        "trust governance",
+        "young leaders",
+        "youth-led"
+      ]
+    },
+    {
+      "id": "gemini-035",
+      "category": "Social Impact",
+      "question": "What specific causes does the SafeX Solutions Trust support?",
+      "answer": "The Trust supports education access, technology advancement, job creation initiatives, and youth-led innovation programs.",
+      "keywords": [
+        "education access",
+        "innovation programs",
+        "job creation",
+        "technology advancement"
+      ]
+    },
+    {
+      "id": "gemini-036",
+      "category": "Social Impact",
+      "question": "How does SafeX Solutions contribute to sustainable development?",
+      "answer": "By providing structural training, employment pathways, and reinvesting half its profits, SafeX Solutions drives local economic growth and reduces barriers to success.",
+      "keywords": [
+        "economic growth",
+        "employment",
+        "poverty reduction",
+        "sustainable development"
+      ]
+    },
+    {
+      "id": "gemini-037",
+      "category": "Process",
+      "question": "What client testimonial highlights the quality of SafeX Solutions' cloud services?",
+      "answer": "J. Lee stated: 'SafeX Solutions transformed our cloud infrastructure with seamless efficiency and clear communication throughout the project.'",
+      "keywords": [
+        "client review",
+        "cloud infrastructure",
+        "j. lee",
+        "testimonial"
+      ]
+    },
+    {
+      "id": "gemini-038",
+      "category": "Process",
+      "question": "Are some of SafeX Solutions' service pages currently under development?",
+      "answer": "Yes, some specific detail pages, including Cybersecurity, AI Automation, Web Development, Digital Marketing, and Creative Media, are currently undergoing active updates.",
+      "keywords": [
+        "service pages",
+        "under development",
+        "website updates"
+      ]
+    },
+    {
+      "id": "gemini-039",
+      "category": "Contact",
+      "question": "What is SafeX Solutions' primary email address for tech inquiries?",
+      "answer": "You can reach them at contact@safexsolutions.com (also styled as contact@Safexsolutions.com).",
+      "keywords": [
+        "contact email",
+        "email address",
+        "support email"
+      ]
+    },
+    {
+      "id": "gemini-040",
+      "category": "Contact",
+      "question": "What is SafeX Solutions' official contact phone number?",
+      "answer": "The official contact phone number is +92 327 5781580.",
+      "keywords": [
+        "call support",
+        "contact phone",
+        "phone number"
+      ]
+    },
+    {
+      "id": "gemini-041",
+      "category": "Contact",
+      "question": "Where is the physical office of SafeX Solutions located?",
+      "answer": "SafeX Solutions is physically located at E-9 Islamabad, Pakistan.",
+      "keywords": [
+        "address",
+        "e-9",
+        "islamabad office",
+        "office location"
+      ]
+    },
+    {
+      "id": "gemini-042",
+      "category": "Contact",
+      "question": "What are the standard operational business hours of SafeX Solutions?",
+      "answer": "Their hours of operation are Monday through Friday, from 9:00 AM to 6:00 PM.",
+      "keywords": [
+        "business hours",
+        "operating hours",
+        "schedule",
+        "work hours"
+      ]
+    },
+    {
+      "id": "gemini-043",
+      "category": "Contact",
+      "question": "Does SafeX Solutions offer a regular newsletter for tech insights?",
+      "answer": "Yes, users can stay connected and sign up to receive monthly tech insights and updates directly to their inbox.",
+      "keywords": [
+        "newsletter",
+        "stay connected",
+        "tech insights",
+        "updates"
+      ]
+    },
+    {
+      "id": "gemini-044",
+      "category": "Process",
+      "question": "How does SafeX Solutions deliver custom tech solutions?",
+      "answer": "Their experienced multidisciplinary team works directly with clients to analyze unique goals, designing custom, secure, and future-ready environments.",
+      "keywords": [
+        "multidisciplinary team",
+        "project delivery",
+        "tailored solutions"
+      ]
+    },
+    {
+      "id": "gemini-045",
+      "category": "Company",
+      "question": "What are the core corporate values of SafeX Solutions?",
+      "answer": "The core values guiding SafeX Solutions are innovation, transparency, and client success.",
+      "keywords": [
+        "client success",
+        "innovation",
+        "transparency",
+        "values"
+      ]
+    }
+  ]
+}
